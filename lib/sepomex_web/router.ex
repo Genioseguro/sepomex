@@ -7,6 +7,7 @@ defmodule SepomexWeb.Router do
 
   scope "/api", SepomexWeb do
     pipe_through :api
+    resources "/v1/zip_codes", ZipCodesController, except: [:show, :new, :edit, :delete, :update]
   end
 
   # Enables LiveDashboard only for development
