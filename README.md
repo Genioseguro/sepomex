@@ -50,7 +50,7 @@ mix phx.server
 
 We currently provide 1 kind of resources:
 
-- **Zip Codes**: [http://sepomex.icalialabs.com/zip_codes](http://localhost:4000/api/v1/zip_codes)
+- **Zip Codes**: [http://localhost:4000/zip_codes](http://localhost:4000/api/v1/zip_codes)
 ### ZipCodes
 
 In order to provide more flexibility to search a zip code, whether is by city, colony, state or zip code you can now send multiple parameters to make the appropiate search. You can fetch the:
@@ -58,7 +58,7 @@ In order to provide more flexibility to search a zip code, whether is by city, c
 #### all
 
 ```bash
-curl -X GET https://sepomex.icalialabs.com/api/v1/zip_codes 
+curl -X GET http://localhost:4000/api/v1/zip_codes 
 ```
 
 ##### Response
@@ -104,25 +104,25 @@ curl -X GET https://sepomex.icalialabs.com/api/v1/zip_codes
 #### by city
 
 ```bash
-curl -X GET http://sepomex.icalialabs.com/api/v1/zip_codes?city=monterrey
+curl -X GET http://localhost:4000/api/v1/zip_codes?city=monterrey
 ```
 
 #### by state
 
 ```bash
-curl -X GET http://sepomex.icalialabs.com/api/v1/zip_codes?state=nuevo%20leon
+curl -X GET http://localhost:4000/api/v1/zip_codes?state=nuevo%20leon
 ```
 
 #### by colony
 
 ```bash
-curl -X GET http://sepomex.icalialabs.com/api/v1/zip_codes?colony=punta%20contry
+curl -X GET http://localhost:4000/api/v1/zip_codes?colony=punta%20contry
 ```
 
 #### by cp
 
 ```bash
-curl -X GET http://sepomex.icalialabs.com/api/v1/zip_codes?zip_code=67173
+curl -X GET http://localhost:4000/api/v1/zip_codes?zip_code=67173
 ```
 **Where:**
 
